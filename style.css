@@ -19,6 +19,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  font-family: "Quicksand", serif;
 }
 body{
   color: #111111;
@@ -157,6 +158,7 @@ body{
   line-height: 30px;
   width: 250px;
   padding: 30px 35px;
+  border-radius: 16px;
 }
 .card-1{
   background: linear-gradient(to bottom, #a3c7c7cc,  #f6f1d3);
@@ -181,6 +183,12 @@ body{
   color: #64C8FF;
   font-size: 0.9rem;
 }
+.read-btn-2{
+  color: violet;
+}
+.read-btn-3{
+  color: green;
+}
 
 /* carousel button  */
 .slide-btn{
@@ -204,6 +212,14 @@ body{
 
 /* Start Our Story section  */
 .story-section{
+  background-image: url("assets/bg.png");
+}
+
+.our-story{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.story-big-card{
   width: 450px;
   border: 1px solid black;
   border-radius: 16px;
@@ -212,7 +228,13 @@ body{
 .details{
   padding: 25px;
 }
-.tow-siblings-img{
+.story-heading{
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 60px;
+}
+.card-img{
   width: 100%;
   border-radius: 16px 16px 0px 0px;
 }
@@ -231,10 +253,48 @@ body{
 }
 
 /* Style small cards  */
-.small-cards{
-  
+.story-card{
+  width: 270px;
+  border: 1px solid black;
+  border-radius: 16px;
+}
+.story-card-title-others{
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+.details-card{
+  padding: 15px;
+  padding-top: 0px;
+}
+.story-card-btn{
+  font-family: "Raleway", serif;
+  position: relative;
+  top: -23px;
+  border-radius: 20px;
+  background-color: rgb(84, 168, 201);
 }
 
+.our-story-cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.card-btn-1{
+  background-color: rgb(48, 180, 48);
+}
+.card-btn-2{
+  background-color: rgb(238, 149, 33);
+}
+.viewall-btn-div{
+  text-align: center;
+}
+
+.viewall-btn{
+  background-color: black;
+  font-size: 1.2rem;
+  margin: 50px;
+}
 
 
 /* Start Responsive Design for MObile */
@@ -275,7 +335,26 @@ body{
   }
   .vision-title{
     font-size: 2rem;
+  }
 
+  /* curriculum-section design responsive  */
+  .curr-card{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Story section Responsive  */
+  .story-big-card{
+    display: none;
+  }
+  .our-story-cards{
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 10px;
+
+  }
+  .story-card{
+    width: 95%;
   }
 
 }
