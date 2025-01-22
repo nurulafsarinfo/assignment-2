@@ -205,7 +205,8 @@ body{
 
 /* Start Our Story section  */
 .story-section{
-  background-image: url("assets/bg.png");
+  background: url("assets/bg.png");
+  background-color: linear-gradient(to top, red, green);
 }
 
 .our-story{
@@ -309,17 +310,36 @@ body{
 
 /* ////////////////////////////// */
 footer{
-  background-color: rgb(102, 159, 212);
+  background-color: rgb(90, 160, 192);
+  padding: 100px;
 }
 
-.footer-section{
+/* .footer-section{
+  width: 90%;
+  margin: 0px auto;
+  color: #ffffff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}  */
+
+.footer-section{
+  display: flex;
 }
-.menu-title{
-  color: ;
+
+.logo-footer{
+  display: flex;
+} 
+/* ////////////////////////////////\/\/\/\/\/\//////////// */
+.about-school, .about-menu{
+  max-width: 350px;
+}
+.footer-logo-title{
+  color: #ffffff;
 }
 .about-link > a{
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -330,6 +350,15 @@ footer{
 .contact-container h3{
   font-size: 1.5rem;
   margin: 20px 0px;
+}
+
+/* marquee section style  */
+.marquee-section{
+  color: #ffffff;
+  background-color: orange;
+  width: 89.5%;
+  margin: 0px auto;
+  border-radius: 4px;
 }
 
 
@@ -409,5 +438,21 @@ footer{
   .story-card{
     width: 95%;
   }
+
+  /* Responsive footer section  */
+  footer{
+    padding: 30px;
+  }
+  
+  .footer-section{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+  }
+  .footer-logo-title{
+    padding-left: 10px;
+  }
+  
 
 }
