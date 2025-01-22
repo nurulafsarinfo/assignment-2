@@ -21,6 +21,7 @@ body{
   width: 90% !important;
   margin: 0 auto;
 }
+
 /* shared style  */
 .yellow-color{
   color: #FEA301;
@@ -205,8 +206,7 @@ body{
 
 /* Start Our Story section  */
 .story-section{
-  background: url("assets/bg.png");
-  background-color: linear-gradient(to top, red, green);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.452), rgba(255, 166, 0, 0.219)), url("assets/bg.png");
 }
 
 .our-story{
@@ -221,6 +221,7 @@ body{
 }
 .details{
   padding: 25px;
+  background-color: #fff;
 }
 .story-heading{
   text-align: center;
@@ -250,6 +251,7 @@ body{
 .story-card{
   width: 270px;
   border-radius: 16px;
+  background-color: #fff;
 }
 .story-card-title-others{
   font-size: 1rem;
@@ -308,30 +310,22 @@ body{
 }
 
 
-/* ////////////////////////////// */
 footer{
   background-color: rgb(90, 160, 192);
   padding: 100px;
 }
 
-/* .footer-section{
-  width: 90%;
-  margin: 0px auto;
-  color: #ffffff;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
-  align-items: center;
-}  */
+
 
 .footer-section{
   display: flex;
+  justify-content: space-between;
+  color: white;
 }
 
 .logo-footer{
   display: flex;
 } 
-/* ////////////////////////////////\/\/\/\/\/\//////////// */
 .about-school, .about-menu{
   max-width: 350px;
 }
@@ -362,22 +356,7 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* //////////////////////////////////////////////////////////////////////////// */
 
 /* Start Responsive Design for MObile */
 
